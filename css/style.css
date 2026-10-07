@@ -1,89 +1,119 @@
-/* ===== Step 2: Type Selectors ===== */
+body{
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    color: rgb(165, 137, 100);
+    font-size:xx-large;
+}
+h2{
+    color: rgb(100, 79, 50);
+    font-size:x-large;
+}
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(100, 79, 50);
+}
+li{
+    display: inline;
+    padding: 5px;
+    font-size: small;
+}
+footer{
+    background-color: rgb(100, 79, 50);
+    color:blanchedalmond;
+    text-align: center;
+    border: 3px solid black;
+}
+footer a{
+        color:blanchedalmond;
 
-h1 {
-  color: darkslateblue;
-  font-size: 40px;
+}
+.artist-card{
+    border: solid 5px rgb(100, 79, 50);
+    width: 600px;
+    height: 600px;
+    background-color: rgb(241, 227, 211);
+    border-radius: 15px;
+}
+.thumbnail{
+    border:solid 1px rgb(37, 29, 18);
+    border-radius: 15px;
+}
+#vangogh h2{
+    color:rgb(89, 33, 7);
+}
+#claude-monet h2{
+    color: rgb(179, 165, 114);
+}
+#pablo-picaso h2{
+    color: brown;
+}
+#indx {
+    font-size: 20px;
+    color: rgb(100, 79, 50);
+}
+hr{
+    color: rgb(100, 79, 50);
 }
 
-h2 {
-  color: teal;
-  font-size: 28px;
+#popup1{
+    display: none;
+}
+#popup1:target{
+    display:block;
+}
+#popup2{
+    display: none;
+}
+#popup2:target{
+    display:block;
+}
+#popup3{
+    display: none;
+}
+#popup3:target{
+    display:block;
 }
 
-nav a {
-  text-transform: uppercase;
-  font-weight: bold;
+#popup2-cluade{
+    display: none;
 }
-
-footer {
-  background-color: #333333;
-  color: white;
+#popup2-cluade:target{
+    display: block;
 }
-
-/* ===== Step 3: Class Selectors ===== */
-
-.artist-card {
-  border: 2px solid darkslateblue;
-  border-radius: 10px;
-  background-color: lavender;
+#popup1-cluade{
+    display: none;
 }
-
-.thumbnail {
-  border: 3px solid #333333;
-  border-radius: 8px;
+#popup1-cluade:target{
+    display: block;
 }
-
-/* ===== Step 4: Id Selectors ===== */
-
-#vangogh h2 {
-  color: goldenrod;
+#popup3-cluade{
+    display: none;
 }
-
-#monet h2 {
-  color: cornflowerblue;
+#popup3-cluade:target{
+    display: block;
 }
-
-#rembrandt h2 {
-  color: saddlebrown;
+#popup3-pablo{
+    display: none;
 }
-
-#welcome-text {
-  font-size: 22px;
+#popup3-pablo:target{
+    display: block;
 }
-
-/* ===== Step 5: Parent + Child Selectors ===== */
-
-header nav a {
-  color: darkslateblue;
+#popup2-pablo{
+    display: none;
 }
-
-main article h2 {
-  font-size: 32px;
+#popup2-pablo:target{
+    display: block;
 }
-
-footer a {
-  color: white;
+#popup1-pablo{
+    display: none;
 }
-
-/* ===== Step 6: Specificity Check ===== */
-
-/*
-  The "Visit Us" <h2> in visit.html has class="section-title".
-  Two rules try to color it:
-    h2             { color: teal; }     (type selector, Step 2)
-    .section-title { color: crimson; }  (class selector, below)
-  Crimson wins: a class selector is more specific than a type selector,
-  so it wins no matter which rule comes first in the file.
-*/
-
-.section-title {
-  color: crimson;
+#popup1-pablo:target{
+    display: block;
 }
-
-/*
-  Specificity scores (id, class, type):
-    h2              -> (0, 0, 1)  one type
-    .artist-card    -> (0, 1, 0)  one class
-    #vangogh h2     -> (1, 0, 1)  one id + one type
-    header nav a    -> (0, 0, 3)  three types
-*/
+a{
+    color: rgb(100, 79, 50);
+    font-size: 15px;
+}
